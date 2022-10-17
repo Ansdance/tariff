@@ -1,0 +1,13 @@
+logging:
+    file: application.log
+    level:
+        de.angelasensio: DEBUG
+        org.springframework: ERROR
+        springfox: ERROR
+    pattern:
+        console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger.%M - %msg%n){yellow}'
+        file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n'
+spring:
+    output:
+        ansi:
+            enabled: always
